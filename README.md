@@ -13,18 +13,18 @@ TypeScript로 작성된 IndexedDB를 쉽게 사용할 수 있는 래퍼 클래�
 
 ## 사용법
 
-생성자
-constructor({ dbName: string, storeName: string });
-DB 데이터 추가
-const DATA = {offset: 0, ...} as yourType;
-indexDb.addData(DATA);
+- **생성자**  
+  `constructor({ dbName: string, storeName: string })`  
+  → 데이터베이스 이름(`dbName`)과 스토어 이름(`storeName`)을 지정하여 객체를 생성합니다.
 
-DB 데이터 업데이트
-indexDb.updateStateByOffset({
-...DATA,
-["KEY"]: updateData,
-});
+- **DB 데이터 추가**  
+  `addData(data)`  
+  → `data` 객체를 IndexedDB에 추가합니다.
 
-DB 데이터 추출 -  특정키로 처음 검색된 데이터 추출
-const key = "your key"
-indexDb.getDataFromState(key)
+- **DB 데이터 업데이트**  
+  `updateStateByOffset(data)`  
+  → 특정 `offset` 값을 기준으로 기존 데이터를 찾아 원하는 필드를 수정합니다.
+
+- **DB 데이터 추출 (특정 키 기준)**  
+  `getDataFromState(key)`  
+  → 지정한 `key` 값과 일치하는 첫 번째 데이터를 조회합니다.
