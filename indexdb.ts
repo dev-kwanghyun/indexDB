@@ -88,14 +88,14 @@ class IndexDb {
     return store.get(id);
   }
 
-  async getDataFromState(): Promise<any> {
+  async getDataFromState(key: string): Promise<any> {
     const db = await this.connect();
     const tx = db.transaction(this.storeName, "readonly");
     const store = tx.objectStore(this.storeName);
     const index = store.index("stateIndex");
 
     return new Promise((resolve, reject) => {
-      const request = index.openCursor(IDBKeyRange.only("pending"));
+      const request = index.openCursor(IDBKeyRange.only(key));
 
       request.onsuccess = (event) => {
         const cursor = (event.target as IDBRequest<IDBCursorWithValue>).result;
