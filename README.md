@@ -28,3 +28,8 @@ TypeScript로 작성된 IndexedDB를 쉽게 사용할 수 있는 래퍼 클래�
 - **DB 데이터 추출 (특정 키 기준)**  
   `getDataFromState(key)`  
   → 지정한 `key` 값과 일치하는 첫 번째 데이터를 조회합니다.
+![before](https://github.com/user-attachments/assets/9fa7b15b-b6db-4d8d-9b52-0dcf6b9a3dc1)
+
+
+https://github.com/user-attachments/assets/0941de36-477d-4fbd-9773-f3fa028cb096
+
