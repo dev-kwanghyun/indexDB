@@ -29,9 +29,9 @@ TypeScript로 작성된 IndexedDB를 쉽게 사용할 수 있는 래퍼 클래�
   `getDataFromState(key)`  
   → 지정한 `key` 값과 일치하는 첫 번째 데이터를 조회합니다.
 
-#관련 로직 도입 전
+# 관련 로직 도입 전
 ![before](https://github.com/user-attachments/assets/9fa7b15b-b6db-4d8d-9b52-0dcf6b9a3dc1)
 
 
-#관련 로직 도입 후
+# 관련 로직 도입 후
 ![after](https://github.com/user-attachments/assets/91cd5e9a-6c99-475d-9192-812b9fce53b5)
