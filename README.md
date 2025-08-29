@@ -34,4 +34,4 @@ TypeScript로 작성된 IndexedDB를 쉽게 사용할 수 있는 래퍼 클래�
 
 
 #관련 로직 도입 후
-![after](https://github.com/user-attachments/assets/89dcb04a-270d-4a82-b53f-2c43c17683bc)
+![after](https://github.com/user-attachments/assets/91cd5e9a-6c99-475d-9192-812b9fce53b5)
